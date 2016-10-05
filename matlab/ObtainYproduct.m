@@ -1,0 +1,11 @@
+yobjective=0.00034;
+yobjective=0.034;
+yobjective=6.9;
+baselineMean=mean(BaselineLambda(1:iterationsPerYear));
+warmingMean=mean(WarmingLambda(1:iterationsPerYear));
+externalMean=mean(ExternalAndWarmingLambda(1:iterationsPerYear));
+exaggerationMean=mean(ExaggerationAndWarmingLambda(1:iterationsPerYear));
+linsolve(baselineMean,yobjective)
+linsolve(warmingMean,yobjective)
+linsolve(externalMean,yobjective)
+linsolve(exaggerationMean,yobjective)

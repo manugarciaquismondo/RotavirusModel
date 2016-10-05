@@ -1,0 +1,21 @@
+
+m0(1)=1000/InitialTotalPop;
+s0(1)=1000/InitialTotalPop;
+i0(1)= 1000/InitialTotalPop;
+r0(1)=1000/InitialTotalPop;
+v1(1)=1000/InitialTotalPop;
+s1(1)=1000/InitialTotalPop;
+i1(1)=1000/InitialTotalPop;
+r1(1)=1000/InitialTotalPop;
+v2(1)=1000/InitialTotalPop;
+s2(1)=1000/InitialTotalPop;
+i2(1)=1000/InitialTotalPop;
+r2(1)=1000/InitialTotalPop;
+v3(1)=1000/InitialTotalPop;
+s3(1)=1000/InitialTotalPop;
+i3(1)=1000/InitialTotalPop;
+r3(1)=1000/InitialTotalPop;
+v4(1)=1000/InitialTotalPop;
+s4(1)=1000/InitialTotalPop;
+i4(1)=1000/InitialTotalPop;
+r4(1)=1000/InitialTotalPop;
