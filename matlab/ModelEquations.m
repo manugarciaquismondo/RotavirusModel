@@ -14,15 +14,15 @@ tBuffer=tBuffer+1;
 %     lambda=ExaggerationWarmingLambda(t, tBuffer);
 % end
 if(t<=preparationIterations)
-   lambda=BaselineLambda(t, t);
+   lambda=BaselineLambda(t, offset_value, t);
 else
    nu=base_nu;
 % %    nu=0;
 %    nu=base_nu*2;
 %    nu=base_nu*100;
-   lambda=productionIterationFunction(t, mod(t,preparationIterations));
+   lambda=productionIterationFunction(t, offset_value, mod(t,preparationIterations));
 
-   % lambda=productionIterationFunction(t, tBuffer);
+   % lambda=productionIterationFunction(t, offset_value, tBuffer);
 end
 
 %dM/dt = x(1)
