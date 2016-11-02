@@ -10,8 +10,8 @@
 %eta is a percentage of maternal immune protection
 %kappa is the contact rate
 %lambda is the per contact transmission probability
-%omega_R is the rate at which you lose natural immune memory when you aren’t re-challenged with the disease (if you are rechallenged, we assume immunity holds)
-%omega_V is the rate at which you lose vaccine-derived immune memory when you aren’t re-challenged with the disease (if you are rechallenged, we assume immunity holds)
+%omega_R is the rate at which you lose natural immune memory when you arenï¿½t re-challenged with the disease (if you are rechallenged, we assume immunity holds)
+%omega_V is the rate at which you lose vaccine-derived immune memory when you arenï¿½t re-challenged with the disease (if you are rechallenged, we assume immunity holds)
 %iota is the percent of recovering people who retain immunity
 %gamma is the recovery rate from infection
 %nu is the rate of vaccination
@@ -63,11 +63,11 @@ ReadInputParameters
 multiplierSwitch=1;
 mu=5/InitialTotalPop;
 mu=2.5000e-04;
-iterationsPerYear=365;
+iterationsPerYear=365.25;
 stableBurninYears=7305;
 preparationYears=stableBurninYears;
 % preparationYears=0;
-productionYears=50;
+productionYears=100;
 if(not(exist('simulatedYears')))
     simulatedYears=preparationYears+productionYears;
 end
