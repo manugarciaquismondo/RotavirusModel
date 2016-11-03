@@ -1,17 +1,29 @@
  
-if(not(exist('dataFilename')))
-    dataFilename = 'data';
+if(not(exist('finalValues')))
+    finalValues = 'data';
+end
+if(not(exist('seriesFileName')))
+    seriesFileName = 'series';
 end
 savedVariables = {};
+savedSeries = {};
 
 classNames = {'s' 'r' 'i'};
 for classIndex=classNames
     for classAge=0:5
-        savedVariables=[savedVariables, strcat(classIndex, num2str(classAge))];
+        localVariable = strcat(classIndex, num2str(classAge));
+        savedVariables=[savedVariables, localVariable];
+        savedSeries=[savedSeries, strcat('Store_',localVariable)];
     end
     for classAge=1:5
-        savedVariables=[savedVariables, strcat('v', num2str(classAge))];
+        localVariable = strcat('v', num2str(classAge));
+        savedVariables=[savedVariables, localVariable];
+        savedSeries=[savedSeries, strcat('Store_',localVariable)];
     end
 end
+
 savedVariables=[savedVariables, 'm0'];
-save(strcat('../data/',dataFilename,'.mat'),savedVariables{:})
+savedSeries=[savedSeries, 'Store_m0'];
+
+save(strcat('../data/',finalValues,'.mat'),savedVariables{:})
+save(strcat('../series/',seriesFileName,'Series.mat'),savedSeries{:})

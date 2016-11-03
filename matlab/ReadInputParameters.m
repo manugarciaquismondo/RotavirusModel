@@ -24,9 +24,9 @@ if(not(exist('rotavirusReproductiveNumber')))
 end
 offset_value=rotavirusReproductiveNumber;
 % If an initial state is given, start with it.
-if(exist('stableData'))
+if(exist('startValues'))
 %     load '../data/stableState.mat';
-    load(strcat('../data/',stableData,'.mat'))
+    load(strcat('../data/',startValues,'.mat'))
 else
     StartPopulation
 end

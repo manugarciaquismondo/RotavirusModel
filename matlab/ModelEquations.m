@@ -20,7 +20,7 @@ else
 % %    nu=0;
 %    nu=base_nu*2;
 %    nu=base_nu*100;
-   lambda=productionIterationFunction(t, offset_value, mod(t,preparationIterations));
+   lambda=productionIterationFunction(t, offset_value, t);
 
    % lambda=productionIterationFunction(t, offset_value, tBuffer);
 end

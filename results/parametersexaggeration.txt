@@ -1,0 +1,4 @@
+daily vaccination coverage = 0.000100
+reproductive number = 40.000000
+simulated years = 200
+results image = ../images/exaggeration.jpeg

@@ -28,6 +28,7 @@ Store_r5=zeros(1,storedIterations);
 
 totalIterations=(simulatedYears*iterationsPerYear);
 preparationIterations=preparationYears*iterationsPerYear;
+preparationIterations=1;
 firstIndexStoredValues=totalIterations-storedIterations;
 h = waitbar(0, 'Simulation started');
 tBuffer=0;
