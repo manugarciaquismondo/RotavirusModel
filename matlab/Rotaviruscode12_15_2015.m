@@ -122,7 +122,7 @@ Iavg=(I0*0.25 + I1*0.75 + I2*1.5 + I3*3.5 + I4*6.5)/Itotal;
 TotalPop = M0 + S0 + I0 + R0 + V1 + S1 + I1 + R1 + V2 + S2 + I2 + R2 +...
     V3 + S3 + I3 + R3 + V4 + S4 + I4 + R4;
 
-
+WriteData
 % zero or 1 parameter
 
 % average age of infection under initial conditions

@@ -26,7 +26,7 @@ offset_value=rotavirusReproductiveNumber;
 % If an initial state is given, start with it.
 if(exist('stableData'))
 %     load '../data/stableState.mat';
-    load stableData;
+    load(strcat('../data/',stableData,'.mat'))
 else
     StartPopulation
 end
